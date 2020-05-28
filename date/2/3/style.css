@@ -1,0 +1,89 @@
+html{
+	margin: 0;
+	padding: 0;
+
+	background-color: black;
+
+	font-family: sans-serif;
+
+	overflow: hidden;
+}
+body{
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.name{
+	position: relative;
+	top: 2vh;
+
+	color: white;
+
+	font-size: 4em;
+}
+.date{
+	position: relative;
+	top: 4vh;
+
+	color: white;
+
+	font-size: 3em;
+}
+.day{
+	position: relative;
+	top: 6vh;
+
+	color: white;
+
+	font-size: 4em;
+}
+.month{
+	position: relative;
+	top: 6vh;
+
+	color: white;
+
+	font-size: 4em;
+}
+.year{
+	position: relative;
+	top: 8vh;
+
+	color: white;
+
+	font-size: 5em;
+}
+img{
+	width: 15vw;
+
+	position: relative;
+	top: 10vh;
+
+	animation: walk 15s linear 0s infinite; 
+}
+@keyframes walk{
+	from{
+		left: -50vw;
+	}
+	50%{
+		left: 50vw;
+		transform: rotateY(0deg);
+	}
+	51%{
+		transform: rotateY(180deg);
+	}
+	to{
+		left: -50vw;
+		transform: rotateY(180deg);
+	}
+}
+.zit{
+	position: relative;
+	top: 16vh;
+
+	color: red;
+
+	font-size: 2em;
+}
