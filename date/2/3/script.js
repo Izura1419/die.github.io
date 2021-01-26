@@ -2,6 +2,10 @@ let name = localStorage.getItem("name");
 let user = document.querySelector(".name");
 user.innerHTML = name + ",";
 
+let typeOfData = localStorage.getItem("typeOfData");
+let data = document.querySelector(".date");
+data.innerHTML = "твоя дата " + typeOfData;
+
 //самое интересное
 
 function random(min,max) {
